@@ -1,7 +1,11 @@
 ---
 title: HTML5+CSS3
 categories: 
- - [web]
+    - [web]
+tags:
+    - web
+    - html
+    - css
 ---
 
 [TOC]

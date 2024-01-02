@@ -1,8 +1,9 @@
 ---
 title: 纯java仿写http服务器
-sticky: true
 categories: 
- - [计算机学科,Java]
+    - [计算机学科,Java]
+tags:
+    - Java
 ---
 
 ## 请求:last_quarter_moon: 

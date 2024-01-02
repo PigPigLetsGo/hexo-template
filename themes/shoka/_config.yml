@@ -2,7 +2,7 @@
 alternate: Dou的个人博客
 
 open_graph:
-  #twitter_id:
+  # twitter_id:
   #google_plus:
   #fb_admins:
   #fb_app_id:
@@ -90,14 +90,14 @@ iconfont: "1832207_igi8uaupcus"
 
 menu:
   home: / || home
-  # about: /about/ || user
+  about: /about/ || user
   posts:
     default: / || feather
     archives: /archives/ || list-alt
     categories: /categories/ || th
     tags: /tags/ || tags
   friends: /friends/ || heart
-  # links: /links/ || magic
+  links: /links/ || magic
 
 # Social Links
 # Usage: `Key: permalink || icon || color`
@@ -111,9 +111,9 @@ social:
   music: https://music.163.com/#/user/home?id=576510459 || cloud-music || "#e60026"
   weibo: https://www.weibo.com/u/5999549841 || weibo || "#ea716e"
   #about: https://about.me/yourname || address-card || "#3b5998"
-  email: 1851644015@qq.com || envelope || "#55acd5"
+  #email: 1851644015@qq.com || envelope || "#55acd5"
   facebook: https://www.facebook.com/profile.php?id=100094087748201 || facebook || "#191717"
-  #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
+  stackoverflow: https://stackoverflow.com/users/19406029/d-kx || stack-overflow || "#191717"
   youtube: https://www.youtube.com/@Dkx-vv7lm || youtube || "#e60026"
   instagram: https://www.instagram.com/doudkx?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr || instagram || "#e60026"
   telegram: https://t.me/dou0108 || twitter || "#00aff0"
@@ -225,12 +225,34 @@ audio:
      - https://music.163.com/#/song?id=1805543348
      - https://music.163.com/#/song?id=1325896149
      - https://music.163.com/#/song?id=1808475152
+     - https://music.163.com/#/song?id=128082
+     - https://music.163.com/#/song?id=163180
+     - https://music.163.com/#/song?id=1404014861
+     - https://music.163.com/#/song?id=1480361161
   - title: 国外
     list:
      - https://music.163.com/#/song?id=4940920
+     - https://music.163.com/#/song?id=563058284
+     - https://music.163.com/#/song?id=1421320798
      - https://music.163.com/#/song?id=28009364
      - https://music.163.com/#/song?id=1823586231
      - https://music.163.com/#/song?id=533542562
+     - https://music.163.com/#/song?id=21303923
+     - https://music.163.com/#/song?id=456370693
+     - https://music.163.com/#/song?id=1342949180
+  - title: music
+    list:
+     - https://music.163.com/#/song?id=1499817937
+  - title: enjoy dota,enjoy
+    list:
+     - https://music.163.com/#/song?id=34167558
+     - https://music.163.com/#/song?id=1353191067
+     - https://music.163.com/#/song?id=1353187371
+     - https://music.163.com/#/song?id=1353191065
+     - https://music.163.com/#/song?id=1353191066
+     - https://music.163.com/#/song?id=1353191063
+     - https://music.163.com/#/song?id=1353187370
+
 # random image api
 image_server: # "https://acg.xydwz.cn/api/api.php"
 

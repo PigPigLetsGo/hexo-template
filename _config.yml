@@ -63,16 +63,16 @@ default_category: uncategorized
 category_map:
   计算机学科: computer-science
   数据结构与算法: data-structures-and-algorithms
+  编程题: programming-questions
   Java: java
   web: web
-  void: void
+  video: video
   movie: movie
   Tvdrama: Tvdrama
   animation: animation
   Reality: Reality
   问题总汇: bug
 tag_map:
-  Java: java
 
 search:
   enable: true

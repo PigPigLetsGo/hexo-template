@@ -3,6 +3,8 @@ title: shoka使用本地搜索
 categories:
   - [问题总汇]
 sticky: true
+tags:
+  - 问题解决方案
 ---
 
 ## 安装插件 
