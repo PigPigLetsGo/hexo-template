@@ -65,6 +65,7 @@ category_map:
   数据结构与算法: data-structures-and-algorithms
   编程题: programming-questions
   Java: java
+  js: js
   web: web
   video: video
   movie: movie
@@ -72,6 +73,12 @@ category_map:
   animation: animation
   Reality: Reality
   问题总汇: bug
+  css: css
+  vue: vue
+  vue3: vue3
+  database: databse
+  mongodb: mongodb
+  mysql: mysql
 tag_map:
 
 search:

@@ -5,6 +5,7 @@ categories:
 tags:
     - Java
     - 编程题
+    - 计算机学科
 ---
 
 # 删除链表的倒数第N个节点
