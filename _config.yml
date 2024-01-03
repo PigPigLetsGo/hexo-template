@@ -79,6 +79,9 @@ category_map:
   database: databse
   mongodb: mongodb
   mysql: mysql
+  the-remaining: the-remaining
+  hexo: hexo
+  shoka: shoka
 tag_map:
 
 search:
