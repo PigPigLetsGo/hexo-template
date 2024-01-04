@@ -1,0 +1,31 @@
+- site: Typora 激活码管理
+  owner: none
+  url: https://support.typora.io/activation/#deactivate-typora
+  desc: 工具
+  image: https://typoraio.cn/img/favicon-128.png
+  color: "#D3D3D3"
+
+- site: 生成代码片段
+  owner: none
+  url: https://carbon.now.sh/
+  desc: 工具
+  image: https://carbon.now.sh/favicon.ico
+  color: "#696969"
+
+- site: 抽象的网站
+  owner: none
+  url: https://matthewrayfield.com/goodies/
+  desc: 工具
+  image: https://matthewrayfield.com/favicon.ico
+  color: "#F5F5DC"
+
+- site: itch游戏网站
+  owner: none
+  url: https://itch.io/
+  desc: 工具
+  image: https://itch.io/favicon.ico
+  color: "#8B3A3A"
+
+  
+
+  

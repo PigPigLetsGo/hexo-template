@@ -3,9 +3,7 @@ title: 合并K个升序链表
 categories:
     - [计算机学科,编程题, Java]
 tags:
-    - Java
-    - 编程题
-    - 计算机学科
+    - 分而治之
 ---
 
 # 合并K个升序链表
