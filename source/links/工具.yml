@@ -26,6 +26,42 @@
   image: https://itch.io/favicon.ico
   color: "#8B3A3A"
 
+- site: enjoycss
+  owner: none
+  url: https://enjoycss.com/5qR
+  desc: 工具
+  image: https://enjoycss.com/img/enjoy_css_logo_small.png
+  color: "#8B3A3A"
   
+- site: neumorphism
+  owner: none
+  url: https://neumorphism.io/#e0e0e0
+  desc: 工具
+  image: https://neumorphism.io/favicon.ico
+  color: "#8B3A3A"
 
-  
+- site: Front end || javascript
+  owner: none
+  url: https://www.javascript.fun/
+  desc: 工具
+  color: "#8B3A3A"
+
+- site: share Icon
+  owner: none
+  url: https://www.shareicon.net/
+  desc: 工具
+  image: https://www.shareicon.net/favicon.ico
+  color: "#8B3A3A"
+
+- site: share Icon
+  owner: none
+  url: https://tableconvert.com/
+  desc: 工具
+  image: https://tableconvert.com/images/favicon.png
+  color: "#8B3A3A"
+
+- site: GTAweb.eu
+  owner: none
+  url: https://gtaweb.eu/gtao-map/ls/12vvgb4tja6ca7p79b
+  desc: 工具
+  color: "#8B3A3A"
