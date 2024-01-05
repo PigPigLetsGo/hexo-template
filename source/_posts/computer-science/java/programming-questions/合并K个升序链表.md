@@ -1,7 +1,7 @@
 ---
 title: 合并K个升序链表
 categories:
-    - [计算机学科,编程题,java]
+    - [计算机学科,java,编程题]
 tags:
     - 分而治之
 ---

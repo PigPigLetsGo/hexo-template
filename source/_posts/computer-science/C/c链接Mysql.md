@@ -111,4 +111,4 @@ E:\C\Demo\Project3\Project5\x64\Debug\Project5.exe (进程 9472)已退出，代�
 
 查看数据库
 
-![image-20230924163008521](./image-20230924163008521.png)
+![image-20230924163008521](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401051549235.png)

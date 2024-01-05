@@ -1,7 +1,7 @@
 ---
 title: vue3-pnpm 包管理器 - 创建项目
 categories: 
-    - [计算机学科,web,vue3]
+    - [计算机学科,web,vue,vue3]
 tags:
     - web
     - vue3
