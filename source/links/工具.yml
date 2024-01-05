@@ -72,3 +72,10 @@
   image: https://visualgo.net/img/favicon.png
   desc: 工具
   color: "#DCDCDC"
+
+- site: wangeditor(富文本编辑器)
+  owner: none
+  url: https://www.wangeditor.com/
+  image: https://www.wangeditor.com/image/logo.png
+  desc: 工具
+  color: "#DCDCDC"
