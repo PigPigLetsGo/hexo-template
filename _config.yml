@@ -82,6 +82,12 @@ category_map:
   the-remaining: the-remaining
   hexo: hexo
   shoka: shoka
+  移动端: 移动端
+  案例代码: 案例代码
+  ECMASCript: ECMASCript
+  WebAPIs: WebAPIs
+  JS进阶: JS进阶
+  正则: 正则
 tag_map:
 
 search:
