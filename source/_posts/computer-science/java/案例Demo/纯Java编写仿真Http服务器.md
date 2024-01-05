@@ -1,10 +1,11 @@
 ---
 title: 纯java仿写http服务器
 categories: 
-    - [计算机学科,Java]
+    - [计算机学科,java,案例Demo]
 tags:
-    - Java
+    - java
     - 计算机学科
+    - 案例Demo
 ---
 
 ## 请求:last_quarter_moon: 
