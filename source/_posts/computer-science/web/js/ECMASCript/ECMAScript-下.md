@@ -1,5 +1,5 @@
 ---
-title: JavaScript语言基础
+title: ECMAScript-下
 categories:
     - [计算机学科,web,js,ECMASCript]
 tags:

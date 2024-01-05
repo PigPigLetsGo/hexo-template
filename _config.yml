@@ -88,6 +88,12 @@ category_map:
   WebAPIs: WebAPIs
   JS进阶: JS进阶
   正则: 正则
+  redis: redis
+  JDBC: JDBC
+  tools: tools
+  案例Demo: 案例Demo
+  设计模式: 设计模式
+  C: C
 tag_map:
 
 search:

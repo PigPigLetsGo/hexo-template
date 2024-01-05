@@ -3042,15 +3042,11 @@ console.log(price.toFixed(2))// 12.35
 
 ![image-20230809090121616](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202308090901457.png)
 
-
-
 ## 练习-完成以下需求
 
 ```js
 const spec = {size: '40cm*40cm',color: '黑色'}
 ```
-
-
 
 请将size和color里面的值拼接为字符串之后，写道div标签里面，展示内容如下：
 
@@ -3068,11 +3064,9 @@ const div = document.querySelector('div').innerHTML = Object.values(arr).join('/
 ```
 
 
-
 ```html
 <div></div>
 ```
-
 
 
 ```less
@@ -3097,8 +3091,6 @@ body {
     }
 }
 ```
-
-
 
 ## 伪数组转换为真数组
 
