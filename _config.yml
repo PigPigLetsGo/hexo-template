@@ -94,6 +94,8 @@ category_map:
   设计模式: 设计模式
   C: C
   spring: spring
+  math: math
+  english: english
 tag_map:
 
 search:
