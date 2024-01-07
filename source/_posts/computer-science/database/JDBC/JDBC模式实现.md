@@ -1,10 +1,10 @@
 ---
 title: JDBC模式实现
 categories:
-    - [计算机学科,databse,JDBC]
+    - [计算机学科,database,JDBC]
 tags:
     - 计算机学科
-    - databse
+    - database
     - JDBC
 ---
 

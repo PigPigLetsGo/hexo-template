@@ -1,10 +1,10 @@
 ---
 title: redis-主从复制
 categories:
-    - [计算机学科,databse,redis]
+    - [计算机学科,database,redis]
 tags:
     - 计算机学科
-    - databse
+    - database
     - redis
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: redis-分片集群
 categories:
-   - [计算机学科,databse,redis]
+   - [计算机学科,database,redis]
 tags:
    - 计算机学科
-   - databse
+   - database
    - redis
    - 集群
 ---
