@@ -98,6 +98,9 @@ category_map:
   english: english
   JVM: JVM
   知识点: 知识点
+  git: git
+  前后端交互: 前后端交互
+  websocket: websocket
 tag_map:
 
 search:
