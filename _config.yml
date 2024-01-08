@@ -96,6 +96,8 @@ category_map:
   spring: spring
   math: math
   english: english
+  JVM: JVM
+  知识点: 知识点
 tag_map:
 
 search:
