@@ -1,7 +1,7 @@
 ---
 title: nvm-Node版本控制
 categories:
-    - [tools]
+    - [tools,nodeJs]
 tags:
     - nodeJs
     - tools

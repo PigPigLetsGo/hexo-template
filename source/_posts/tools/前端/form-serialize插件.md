@@ -1,9 +1,9 @@
 ---
 title: form-serialize插件，快速收集表单元素的值
 categories:
-    - [tools]
+    - [tools,前端]
 tags:
-    - 工具
+    - tools
     - web
 ---
 
