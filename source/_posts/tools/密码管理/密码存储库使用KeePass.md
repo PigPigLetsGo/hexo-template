@@ -35,4 +35,4 @@ tags:
 
 演示如下：
 
-![test](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202311211723858.gif)
+![recording](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401201056984.gif)
