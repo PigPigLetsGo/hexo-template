@@ -5,6 +5,7 @@ categories:
 tags:
     - Swing
     - 编码问题
+    - 问题总汇
 ---
 
 -Dfile.encoding=gbk

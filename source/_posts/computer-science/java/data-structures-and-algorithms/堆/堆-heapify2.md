@@ -3,7 +3,9 @@ title: 堆-heapify2-实现其它方法
 categories:
     - [计算机学科,java,数据结构与算法,堆]
 tags:
+    - 计算机学科
     - java
+    - 数据结构与算法
     - heapify
     - 堆
 ---

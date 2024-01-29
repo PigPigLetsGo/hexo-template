@@ -6,6 +6,7 @@ tags:
     - java
     - vim
     - 输入法
+    - 问题总汇
 ---
 
 在idea中使用vim,insert模式用中文输入法,切换到normal模式后仍然是中文,针对这个痛点,idea中有`ideaVimExtension` 插件可以解决

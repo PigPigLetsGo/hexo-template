@@ -4,9 +4,9 @@ categories:
   - [问题总汇,shoka,hexo]
 sticky: true
 tags:
-  - 问题解决方案
   - hexo
   - shoka
+  - 问题总汇
 ---
 
 ## 安装插件 

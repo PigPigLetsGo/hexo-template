@@ -4,6 +4,7 @@ categories:
     - [问题总汇]
 tags:
     - 报错
+    - 问题总汇
 ---
 
 # Java出现unreachable statement异常 原因检查
