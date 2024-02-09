@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "Dkx の Java小窝"
+title: "D の Java小窝"
 subtitle: "别怕路长梦远"
 description: "欢迎来我的博客空间"
-keywords: "java"
-author: "Dkx"
+keywords: "java,web,c"
+author: "D"
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
@@ -101,6 +101,7 @@ category_map:
   git: git
   前后端交互: 前后端交互
   websocket: websocket
+  linux: linux
 tag_map:
 
 search:
