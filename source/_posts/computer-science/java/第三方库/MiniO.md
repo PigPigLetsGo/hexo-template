@@ -1,10 +1,12 @@
 ---
 title: Minio
 categories:
-   - [计算机学科,java,spring,springboot]
+   - [计算机学科,java,第三方库]
 tags:
    - 计算机学科
-   - springboot
+   - java
+   - 第三方库
+   - Minio
 ---
 
 # 一、Minio
