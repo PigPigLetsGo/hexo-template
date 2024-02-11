@@ -37,11 +37,11 @@ MVC的工作流程:
 
 web 通过浏览器访问页面,前端页面使用异步提交的方式发送到后端服务器,后端服务器采用,表现层,业务层,数据层的三层架构的形式进行开发,页面发送的请求由表现层接收,获取用户的请求参数后,将参数传递到业务层再由业务层访问数据层得到用户需要访问的数据后将数据返回给表现层
 
-![![image_2023-02-28-09-55-34](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202308231502785.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-02-28-09-55-34_20230228095922.png?v=1&type=image&token=V1:mM4SRRKC4ipI2jAbTv_XKB0Lvj3FXM3SLxSyTJlV5dI)
+![image_2023-02-28-09-55-34](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202308231502785.png)
 
 表现层拿到数据后将数据转换成json格式发送给前端页面,前端页面接收数据后解析数据并组织成用户浏览的最终页面信息交给浏览器
 
-![![image_2023-02-28-10-04-48](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202308231502121.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-02-28-10-04-48_20230228114047.png?v=1&type=image&token=V1:lPxGAY3PyF3SDnLjjy4wO3gbPVodnCklfxcALZQRTNg)
+![image_2023-02-28-10-04-48](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202308231502121.png)
 
 - SpringMVC是一种基于Java实现MVC模型的轻量级web框架
 
@@ -50,7 +50,7 @@ web 通过浏览器访问页面,前端页面使用异步提交的方式发送到
 
 - 灵活性强
 
-![![image_2023-02-28-10-09-22](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104087.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-02-28-10-09-22_20230228114059.png?v=1&type=image&token=V1:zipI1kWUI2CjRJWAdJ7YDmvma9-wlq57vyvpwhD5jdU)
+![image_2023-02-28-10-09-22](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104087.png)
 
 - 小结
     - SpringMVC是一种表现层框架技术
@@ -89,7 +89,7 @@ web 通过浏览器访问页面,前端页面使用异步提交的方式发送到
 </build>
 ```
 
-![![image_2023-02-28-11-01-23](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104909.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-02-28-11-01-23_20230228114117.png?v=1&type=image&token=V1:4HI6B2csKa50-InxxCciyzZXscbTRiNsq4IulZb8424)
+![image_2023-02-28-11-01-23](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104909.png)
 
 2.创建SpringMVC控制器类(等同于Servlet功能)
 
@@ -242,7 +242,7 @@ public class ServletContainerInitializerConfig extends AbstractDispatcherServlet
 
 6. 检测到有@ResponseBody直接将save()方法的返回值作为响应体返回给请求方
 
-![![image_2023-02-28-14-48-08](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104777.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-02-28-14-48-08_20230228150010.png?v=1&type=image&token=V1:oD4mrSPwUaDZwAcbwGn2GXxkKorT-HhDI2vSyA0S5hs)
+![image_2023-02-28-14-48-08](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104777.png)
 
 ## Controller加载控制与业务bean加载控制
 
@@ -260,7 +260,7 @@ public class ServletContainerInitializerConfig extends AbstractDispatcherServlet
     - 方式二:Spring加载的bean设定扫描范围为精准范围,例如Service包,dao包等
     - 方式三:不区分Spring与SpringMVC的环境,加载到同一个环境中
 
-![![image_2023-02-28-14-57-35](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104972.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-02-28-14-57-35_20230228150025.png?v=1&type=image&token=V1:HfBhhMHkzrQ-8QgMljigm3w6tD8kggRnAG3XqMB4To0)
+![image_2023-02-28-14-57-35](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104972.png)
 
 ## @ComponentScan
 
@@ -341,7 +341,7 @@ public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatc
 
 - 如果两个Controller不同的类中有同样一个访问路径为 `/save` 那么,将会报错如下:
 
-![![image-20230301103255294](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104266.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image-20230301103255294_20230301150535.png?v=1&type=image&token=V1:M6qs_9a4bb7PuqGlYabymKsv4IQO9Q2Q3d3iWhTUQRs)
+![image-20230301103255294](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104266.png)
 
 导致错误的代码
 
@@ -400,7 +400,7 @@ public class UserController {
 
 访问路径查看效果
 
-![![image_2023-03-01-10-45-02](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104618.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-10-45-02_20230301104757.png?v=1&type=image&token=V1:uJXvcIF9AnGIXFW3S4geaxdy89MMGTSc8GflaJMsft0)
+![image_2023-03-01-10-45-02](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104618.png)
 
 ### 简化书写
 
@@ -430,7 +430,7 @@ public class BookController {
 
 访问结果
 
-![![image_2023-03-01-11-01-34](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104886.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-01-34_20230301150555.png?v=1&type=image&token=V1:jB0L_yef15YHTi5og4N4HpBXFyOb6wSR3OwRebOmpuU)
+![image_2023-03-01-11-01-34](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104886.png)
 
 ## 请求方式
 
@@ -470,11 +470,11 @@ public class BookController {
 
 Send Request
 
-![![image_2023-03-01-11-15-51](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104759.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-15-51_20230301150615.png?v=1&type=image&token=V1:F_VyXVqNDeJgU9E7axr187s12rN-X4K0NS6RrRcftj4)
+![image_2023-03-01-11-15-51](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104759.png)
 
 show console result
 
-![![image_2023-03-01-11-17-02](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104007.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-17-02_20230301150628.png?v=1&type=image&token=V1:DFtAW_rQFgFqa0IsqReHfQuo3nsiKdX2BZ500bUxq-4)
+![image_2023-03-01-11-17-02](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104007.png)
 
 #### Post请求
 
@@ -482,17 +482,17 @@ show console result
 
 Post请求不能在Url中写?来进行参数的赋值
 
-![![image_2023-03-01-11-18-32](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104745.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-18-32_20230301150645.png?v=1&type=image&token=V1:wSNFsoibWZGB1HTtkzEcZjiqGzndvgIl_0fyokBgVRg)
+![image_2023-03-01-11-18-32](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104745.png)
 
 我们需要在响应体中进行赋值
 
-![![image_2023-03-01-11-22-51](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104217.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-22-51_20230301150656.png?v=1&type=image&token=V1:-F2apK9f0drjPUy_2QVN29uOciF-ofSIGq3YzvKu5UI)
+![image_2023-03-01-11-22-51](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104217.png)
 
-![![image_2023-03-01-11-26-14](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104030.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-26-14_20230301150709.png?v=1&type=image&token=V1:WFlzGxbF9kovBCkYt3HB5I1oec2XGZbPTrFzXlzB6F0)
+![image_2023-03-01-11-26-14](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104030.png)
 
 show console result
 
-![![image_2023-03-01-11-26-51](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104083.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-26-51_20230301150723.png?v=1&type=image&token=V1:TKGTq0suvc8qDFKv7pBYBVi50TwopZPOHb36uXPPGuU)
+![image_2023-03-01-11-26-51](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104083.png)
 
 ## 处理请求参数中文乱码问题
 
@@ -527,15 +527,15 @@ public class ServeltConfig extends AbstractAnnotationConfigDispatcherServletInit
 }
 ```
 
-![![image_2023-03-01-11-38-16](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104644.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-38-16_20230301150740.png?v=1&type=image&token=V1:TL148AyiBBTqA7icy316397q2umA9OTps_VPFKQDwpU)
+![image_2023-03-01-11-38-16](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104644.png)
 
 send request
 
-![![image_2023-03-01-11-44-17](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104148.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-44-17_20230301150750.png?v=1&type=image&token=V1:JxP3dqC6yZIvE5BaFZV76wo4I1tmt4jVEA7cnsqzj_w)
+![image_2023-03-01-11-44-17](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104148.png)
 
 show console result
 
-![![image_2023-03-01-11-44-39](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104019.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-44-39_20230301150805.png?v=1&type=image&token=V1:OrO83t7BqaxrMO8XxtMqyaK_IpNcxS9VEzuDADDZn-k)
+![image_2023-03-01-11-44-39](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104019.png)
 
 - <font style="color:red">**注意**</font>:此处理乱码方式对POST有效,但对GET无效
 
@@ -555,11 +555,11 @@ show console result
 
 send request
 
-![![image_2023-03-01-11-58-02](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104100.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-58-02_20230301150821.png?v=1&type=image&token=V1:H27NRXNfyD6vdxJel_CMq_Xcmjl_BSg5281qxzIITac)
+![image_2023-03-01-11-58-02](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104100.png)
 
 show console result
 
-![![image_2023-03-01-11-57-49](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104828.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-57-49_20230301150831.png?v=1&type=image&token=V1:QAiUWisL8vXBpDSD2FSWmtPUfyjsCikHHY5JsG9yyHY)
+![image_2023-03-01-11-57-49](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104828.png)
 
 - 用于在访问路径的方法的参数列表中对请求参数进行形参之间绑定关系
 
@@ -580,11 +580,11 @@ public class BookController {
 
 send request
 
-![![image_2023-03-01-11-59-05](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104817.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-59-05_20230301150845.png?v=1&type=image&token=V1:oVlgDoybS8okUommnvOQsbZcoQuXHUcaswo6kTPzqDE)
+![image_2023-03-01-11-59-05](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104817.png)
 
 show console result
 
-![![image_2023-03-01-11-59-33](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104905.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-11-59-33_20230301150858.png?v=1&type=image&token=V1:W_wzg-57RrwZCwaWil5BWiQxeao6aG1zuq3tDYJ7jcA)
+![image_2023-03-01-11-59-33](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104905.png)
 
 ## 五种数据类型的传参方式
 
@@ -592,7 +592,7 @@ show console result
 
 -  url地址传参,地址参数名与形参变量名相同,定义形参即可接收参数
 
-![![image_2023-03-01-14-50-09](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104842.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-14-50-09_20230301150944.png?v=1&type=image&token=V1:tUp4kE9X3Q390V2oQM6mfl3QXE7pfFm_ZJCkqnZnEWc)
+![image_2023-03-01-14-50-09](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104842.png)
 
 - 请求参数名与形参变量名<font style="color:red">**不同**</font>,使用<font style="color:red">**@RequestParam**</font>绑定参数关系
 
@@ -614,7 +614,7 @@ public String save(@RequestParam("n") String name, int age){
 
 <font style="color:red">**注意:** </font>**编写实体类代码的时候一定加上getter和setter还有toString否则值为null** 
 
-![![image_2023-03-01-14-57-29](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104528.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-14-57-29_20230301151000.png?v=1&type=image&token=V1:XTzNFGj6VAvumdlB39Pl4riYLGUujwAJXmhB9OdgjVk)
+![image_2023-03-01-14-57-29](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104528.png)
 
 ```java
 //    pojo参数，如果发送请求的参数名和pojo类中的属性名相同则可以接收到参数值
@@ -630,7 +630,7 @@ public String save(User u){
 
 -  请求参数名与形参对象属性名相同且请求参数为多个,定义数组类型形参即可接收参数
 
-![![image_2023-03-01-15-01-24](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104430.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-15-01-24_20230301151014.png?v=1&type=image&token=V1:XcAYDtTIOhiDO5t9lZkcQv8Y9rmOSZ41jDh87czsFV8)
+![image_2023-03-01-15-01-24](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061104430.png)
 
 ```java
 //    数组参数
@@ -646,7 +646,7 @@ public String arrayParam(String[] likes){
 
 -  请求参数名与形参集合对象名相同且请求参数为多个,@RequestParam绑定参数关系
 
-![![image_2023-03-01-15-03-14](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061105625.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-15-03-14_20230301151028.png?v=1&type=image&token=V1:X2_xC1nK4n4iW6DK2y-sXI5DcZzKEpoqJviXMThD9Pg)
+![image_2023-03-01-15-03-14](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061105625.png)
 
 ```java
 //    集合参数
@@ -676,7 +676,7 @@ public String listParam(@RequestParam List<String> likes){
 
 3.  开启自动转换json数据的支持
 
-![![image-20230301170021890](./images/image-20230301170021890.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image-20230301170021890_20230301214324.png?v=1&type=image&token=V1:6bhIWdxVMSWxSQbI-fN2xHbDAqoboL1GOote0oUILio)
+![image-20230301170021890](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20230301170021890_20230301214324.png)
 
 <font style="color:red">**注意事项：**</font>**@EnableWebMvc**注解功能强大，该注解整合了多个功能，此处仅使用其中一部分功能，即json数据进行自动类型转换
 
@@ -728,11 +728,11 @@ public class UserController {
 
 send request
 
-![![image_2023-03-01-15-45-34](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061108054.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-15-45-34_20230301165118.png?v=1&type=image&token=V1:EJPbv1_S3rPUXUUsGYLCRhMZJIPY-oNY0aKvUXguYbE)
+![image_2023-03-01-15-45-34](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061108054.png)
 
 show console result
 
-![![image_2023-03-01-16-09-14](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061108575.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-16-09-14_20230301165133.png?v=1&type=image&token=V1:jTNEFJBIf4haD9ulFJuhmqJo3Of4rVXOVZXMogd0svQ)
+![image_2023-03-01-16-09-14](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061108575.png)
 
 #### json对象(POJO)
 
@@ -887,7 +887,7 @@ public class Address {
 
 send request
 
-![![image_2023-03-01-16-42-25](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061108671.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-16-42-25_20230301165202.png?v=1&type=image&token=V1:mKrSrm0-gLapYKgMEwSH646T1WJFZm2vsjQ3fHRlZPk)
+![image_2023-03-01-16-42-25](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061108671.png)
 
 #### json数组(POJO)
 
@@ -903,7 +903,7 @@ send request
 
 send request
 
-![![image_2023-03-01-16-50-01](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061109370.png)](SpringMVC%E7%AE%80%E4%BB%8B_md_files/image_2023-03-01-16-50-01_20230301165216.png?v=1&type=image&token=V1:GODlLy0uFoSWsaNCDANiuu1TzfbXUFdIUdcyNcF7LqU)
+![image_2023-03-01-16-50-01](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401061109370.png)
 
 ### @EnableWebMvc
 

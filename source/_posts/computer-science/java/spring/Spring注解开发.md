@@ -186,7 +186,7 @@ ApplicationContext c = new AnnotationConfigApplicationContext(SpringConfig.class
 
 - 设置为单例:singleton
 
-[查看代码案例](./code/1.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/1/) 
 
 ### 生命周期
 
@@ -198,7 +198,7 @@ ApplicationContext c = new AnnotationConfigApplicationContext(SpringConfig.class
 
 -  **作用:  彻底销毁前执行** 
 
-[查看代码案例](./code/2.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/2/) 
 
 ### 依赖注入
 
@@ -218,7 +218,7 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 
 <font style="color:red">**注意**</font>:避免自动装配两个名称相同的Dao或者Service否则会发生数据不一致报错,使用<font style="color:green">**@Qualifier**</font>可以指定要自动装配的是哪个bean
 
-[查看代码案例](./code/3.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/3/) 
 
 #### @Qualifier
 
@@ -226,17 +226,17 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 
 通过使用@Qualifier注解,我们可以消除需要注入哪个bean的问题
 
-[查看代码案例](./code/4.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/4/) 
 
 #### @Value
 
 - **作用:  使用@Value实现简单类型注入** 
 
-[查看代码案例](./code/5.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/5/) 
 
 - 载入配置文件来引入Value的值
 
-[查看代码案例](./code/6.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/6/) 
 
 ### @PropertySource
 
@@ -250,7 +250,7 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 
 - <font style="color:red">**需要注意**</font>此方式不支持使用**`classpath*:*`**来读取配置文件的位置,可使用`classpath:` 
 
-[查看代码案例](./code/7.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/7/) 
 
 ### 管理第三方bean
 
@@ -260,7 +260,7 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 
 - 加载druid配置
 
-[查看代码案例](./code/8.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/8/) 
 
 #### @Import
 
@@ -271,11 +271,11 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 
 **==简单类型依赖注入==和==引用类型依赖注入==** 
 
-[查看代码案例](./code/9.md) 
+[查看代码案例](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/9/) 
 
 ### 注解开发总结
 
-[点击查看](./code/10.md) 
+[点击查看](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/10/) 
 
 ### @Transactional
 
@@ -294,7 +294,7 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 - 在SpringCofing中定义注解`@EnableTransactionManagement`注解来告诉配置类去找事务的注解`@Transaction` (开启注解式事务驱动)
 - <font style="color:red">注意:</font>**该注解需要导入的依赖:spring-jdbc** 否则不能导包
 
-[点击查看具体事务操作](./事务/SPring事务简介.md) 
+[点击查看具体事务操作](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BA%8B%E5%8A%A1/Spring%E4%BA%8B%E5%8A%A1%E7%AE%80%E4%BB%8B/) 
 
 ## AOP
 
@@ -351,7 +351,7 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 - JoinPoint:适用于前置,后置,返回后,异常后通知,设置为方法参数列表的第一个参数否则会报错
     - JoinPoint,对象描述了连接点方法的运行状态,可以获取到原始的方法调用参数
 
-[查看具体内容](./AOP简介.md) 
+[查看具体内容](https://pigpigletsgo.github.io/computer-science/java/spring/AOP%E7%AE%80%E4%BB%8B/) 
 
 ## SpringMvc
 
@@ -418,7 +418,7 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 
 - <font style="color:red">**使用形式: 入参**</font> 
 
-[查看具体](./SpringMVC/SpringMVC简介.md) 
+[查看具体](https://pigpigletsgo.github.io/computer-science/java/spring/springmvc/SpringMVC%E7%AE%80%E4%BB%8B/) 
 
 ### @JsonFormat
 
@@ -432,7 +432,7 @@ Spring注解开发是让我们加速开发的,所以它对原始的功能做了�
 
 - <font style="color:red">**使用形式：出参**</font> 
 
-[查看具体](./code/12.md) 
+[查看具体](https://pigpigletsgo.github.io/computer-science/java/spring/%E4%BB%A3%E7%A0%81%E6%A1%88%E4%BE%8B/12/) 
 
 ## REST风格
 
