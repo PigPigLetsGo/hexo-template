@@ -102,6 +102,7 @@ category_map:
   前后端交互: 前后端交互
   websocket: websocket
   linux: linux
+  nginx: nginx
 tag_map:
 
 search:
