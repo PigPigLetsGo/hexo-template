@@ -42,3 +42,5 @@ tags:
  * 二叉搜索树在插入和删除时，节点可能失衡
  * 如果在插入和删除时通过旋转，始终让二叉搜索树保持平衡，称为自平衡的二叉搜索树
  * AVL是平衡二叉搜索树的实现之一
+
+ 代码实现查看文章：[点击查看](https://pigpigletsgo.github.io/computer-science/java/data-structures-and-algorithms/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E6%A0%91%E7%BB%93%E6%9E%84%E7%9A%84%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8/) 其中有讲AVL树的实现
