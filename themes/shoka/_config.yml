@@ -188,7 +188,7 @@ creative_commons:
 valine:
   appId: wdsNlBUj9JciEmqYqF8X7rSK-gzGzoHsz
   appKey: sxgx5PvvR9JDk4fEhCYX8muE
-  placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
+  placeholder: ヽ(○´∀`)ﾉ♪ ~~~ 快来评论把，使用说明如下：\n💥1.名字随便填写\n📸2.输入自己的QQ邮箱\n💣3.网站可以不填写\n⚡前两个完成后就可以评论啦!!! # Comment box placeholder
   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
   pageSize: 10 # Pagination size
   lang: zh-CN
