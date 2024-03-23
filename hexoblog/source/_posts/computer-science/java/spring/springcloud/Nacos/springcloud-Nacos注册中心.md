@@ -59,6 +59,8 @@ spring:
       server-addr: localhost:8848 # nacos服务地址
 ```
 
+==PS==：在当前启动类中添加注解：@EnableDiscoveryClient (服务发现)
+
 5、启动并测试
 
 ![image-20231005130842602](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202310051308798.png)
@@ -72,6 +74,7 @@ spring:
 >  2.  Nacos服务注册或发现
 >      1.  引入nacos.discovery依赖
 >      2.  配置nacos地址spring.cloud.nacos.server-addr
+>      3.  在当前启动类中添加@EnableDiscoveryClient注解，用于服务发现
 
 ### 4.3、Nacos服务分级存储模型:deciduous_tree: 
 

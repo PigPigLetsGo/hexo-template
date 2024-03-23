@@ -2,31 +2,31 @@
 
 1. 创建Maven模块
 
-![![image_2023-03-06-20-43-36](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-43-36_20230307151537.png)](1_md_files/image_2023-03-06-20-43-36_20230307151537.png?v=1&type=image&token=V1:DIsRhdjvNviTbTFooiFlzit-cdR6S96AfyNXDQ2XGYw)
+![image_2023-03-06-20-43-36](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-43-36_20230307151537.png)
 
 2. 将其import到该模块中
 
-![![image_2023-03-06-20-44-31](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-44-31_20230307151549.png)](1_md_files/image_2023-03-06-20-44-31_20230307151549.png?v=1&type=image&token=V1:bkeMrVbVLWzz2sG-MUr5ifVT5Y32YN_egoarDo08jrE)
+![image_2023-03-06-20-44-31](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-44-31_20230307151549.png)
 
 3. 选择模块
 
-![![image_2023-03-06-20-44-59](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-44-59_20230307151600.png)](1_md_files/image_2023-03-06-20-44-59_20230307151600.png?v=1&type=image&token=V1:cGqp6eBvUwb0yoRYx6LojUubkb9B4orWt6T4CpP54_0)
+![image_2023-03-06-20-44-59](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-44-59_20230307151600.png)
 
 4. 选择导入为Maven项目并finish
 
-![![image_2023-03-06-20-45-26](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-45-26_20230307151613.png)](1_md_files/image_2023-03-06-20-45-26_20230307151613.png?v=1&type=image&token=V1:6kUxZR8V6urZoBnrfPPykDW5KLUpcg2Quvds7FYkjBM)
+![image_2023-03-06-20-45-26](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-45-26_20230307151613.png)
 
 5. 将ssm模块中的domain给剪切到pojo模块中
 
-![![image_2023-03-06-20-46-40](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-46-40_20230307151624.png)](1_md_files/image_2023-03-06-20-46-40_20230307151624.png?v=1&type=image&token=V1:nOlJeYZ1UVmeUIgrPjjcPrivdsFPN7kvjGH_eGLjKVA)
+![image_2023-03-06-20-46-40](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-46-40_20230307151624.png)
 
 6. 配置ssm的pom文件,将pojo模块的坐标导入到该模块中来使用domain层的类
 
-![![image_2023-03-06-20-48-07](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-48-07_20230307151635.png)](1_md_files/image_2023-03-06-20-48-07_20230307151635.png?v=1&type=image&token=V1:CwB4gAptryoo0Jn_KJ_DoYJtOl2zrUENzUyMfWV5NUg)
+![image_2023-03-06-20-48-07](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-48-07_20230307151635.png)
 
 7. 同样的操作创建dao模块后将其导入坐标到ssm模块的pom中
 
-![![image_2023-03-06-20-49-10](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-49-10_20230307151647.png)](1_md_files/image_2023-03-06-20-49-10_20230307151647.png?v=1&type=image&token=V1:iYMmkksju96HqeAG4qMjZeOwjRykLLaAfkVwAEej4NY)
+![image_2023-03-06-20-49-10](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-03-06-20-49-10_20230307151647.png)
 
 8. 在dao模块中dao层需要使用到mybatis和jdbc的一些操作还有在BookDao中使用到了Book实体类,所以我们需要将这些东西都导入到dao模块的pom中
 
