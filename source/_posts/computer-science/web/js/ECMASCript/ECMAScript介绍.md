@@ -4,10 +4,7 @@ categories:
     - [计算机学科,web,js,ECMASCript]
 tags:
     - 计算机学科
-    - web
     - js
-    - ECMASCript
-    - 介绍
 ---
 
 # JavaScript介绍:zap: 

@@ -1,0 +1,26 @@
+---
+title: 解决端口被占用
+categories:
+   - [tools,windows]
+tags: 
+   - tools
+   - windows
+---
+
+使用命令查看被占用的端口号
+
+```bash
+C:\Users\Administrator>netstat -ano|findstr "10000"
+  TCP    0.0.0.0:10000          0.0.0.0:0              LISTENING       5004
+  TCP    [::]:10000             [::]:0                 LISTENING       5004
+  TCP    [::1]:10000            [::1]:6644             TIME_WAIT       0
+  TCP    [::1]:10000            [::1]:6645             TIME_WAIT       0
+
+C:\Users\Administrator>
+```
+
+打开任务管理器我们显示PID，找到对应的进程PID
+
+![image-20240318224517572](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240318224517572.png)
+
+我们将其终结就行了！

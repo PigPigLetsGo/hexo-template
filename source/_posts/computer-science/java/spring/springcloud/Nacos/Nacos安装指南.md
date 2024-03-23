@@ -222,7 +222,97 @@ sh startup.sh -m standalone
 
 
 
+# 4. Docker安装nacos
 
 
 
+通过指定 Nacos 镜像的标签（tag）来选择特定版本。对于 Nacos 1.4.1 版本，你可以使用 `**1.4.1**` 标签。以下是在 Linux 的 Docker 中创建一个 Nacos 1.4.1 容器的步骤：
 
+1. **拉取 Nacos 1.4.1 镜像**:
+
+   打开终端，执行以下命令拉取 Nacos 1.4.1 镜像：
+
+   ```bash
+   docker pull nacos/nacos-server:1.4.1
+   ```
+
+   这将从 Docker Hub 上下载 Nacos 1.4.1 版本的官方镜像
+
+2. 创建数据库我们到数据库中先创建一个数据库名为nacos或者随意都行
+
+   sql表 到官网的github中copy就行了然后创建即可：https://github.com/alibaba/nacos/blob/master/config/src/main/resources/META-INF/nacos-db.sql
+
+   ![image-20240322085318286](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240322085318286.png)
+
+    2.1 创建挂在目录和配置文件如下
+
+   ```bash
+   mkdir -p /mydata/nacos/logs/                      #新建logs目录
+   mkdir -p /mydata/nacos/init.d/          
+   vim /mydata/nacos/init.d/custom.properties        #修改配置文件
+   ```
+
+   修改custom.properties配置文件：
+
+   把下面的数据库连接配置修改为自己的
+
+   ```properties
+   server.contextPath=/nacos
+   server.servlet.contextPath=/nacos
+   server.port=8848
+   
+   spring.datasource.platform=mysql
+   db.num=1
+   db.url.0=jdbc:mysql://xx.xx.xx.x:3306/nacos_config? characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true #这里需要修改端口
+   db.user=user #用户名
+   db.password=pass #密码
+   
+   nacos.cmdb.dumpTaskInterval=3600
+   nacos.cmdb.eventTaskInterval=10
+   nacos.cmdb.labelTaskInterval=300
+   nacos.cmdb.loadDataAtStart=false
+   management.metrics.export.elastic.enabled=false
+   management.metrics.export.influx.enabled=false
+   server.tomcat.accesslog.enabled=true
+   server.tomcat.accesslog.pattern=%h %l %u %t "%r" %s %b %D %{User-Agent}i
+   nacos.security.ignore.urls=/,/**/*.css,/**/*.js,/**/*.html,/**/*.map,/**/*.svg,/**/*.png,/**/*.ico,/console-fe/public/**,/v1/auth/login,/v1/console/health/**,/v1/cs/**,/v1/ns/**,/v1/cmdb/**,/actuator/**,/v1/console/server/**
+   nacos.naming.distro.taskDispatchThreadCount=1
+   nacos.naming.distro.taskDispatchPeriod=200
+   nacos.naming.distro.batchSyncKeyCount=1000
+   nacos.naming.distro.initDataRatio=0.9
+   nacos.naming.distro.syncRetryDelay=5000
+   nacos.naming.data.warmup=true
+   nacos.naming.expireInstance=true
+   ```
+
+   
+
+3. **创建并运行 Nacos 容器**:
+
+   执行以下命令创建并运行 Nacos 容器：
+
+   ```bash
+   docker  run \
+   --name nacos -d \
+   -p 8848:8848 \
+   --privileged=true \
+   --restart=always \
+   -e JVM_XMS=256m \
+   -e JVM_XMX=256m \
+   -e MODE=standalone \
+   -e PREFER_HOST_MODE=hostname \
+   -v /mydata/nacos/logs:/home/nacos/logs \
+   -v /mydata/nacos/init.d/custom.properties:/home/nacos/init.d/custom.properties \
+   nacos/nacos-server
+   ```
+
+   可用设置：docker update --restart=always  nacos
+
+   这将在后台运行一个名为 `**nacos-server**` 的容器，并将容器的 8848 端口映射到主机的 8848 端口。
+
+   参数说明：
+
+   -  -e MODE=standalone 单机启动
+   -  --restart=always启动docker时自动启动nacos
+
+   

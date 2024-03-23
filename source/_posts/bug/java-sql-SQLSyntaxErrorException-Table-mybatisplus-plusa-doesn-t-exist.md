@@ -4,7 +4,7 @@ categories:
     - [问题总汇]
 tags:
     - 问题总汇
-    - SpringBoot
+    - springboot
     - mybatis
 ---
 

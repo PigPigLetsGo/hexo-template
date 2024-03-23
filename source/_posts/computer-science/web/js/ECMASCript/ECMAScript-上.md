@@ -4,10 +4,7 @@ categories:
     - [计算机学科,web,js,ECMASCript]
 tags:
     - 计算机学科
-    - web
     - js
-    - ECMASCript
-    - 基础
 ---
 
 # 变量(<font style="color:red">重要</font>):dagger: 

@@ -5,7 +5,6 @@ categories:
 tags:
     - 计算机学科
     - nginx
-    - 基础
 ---
 
 打开官网页面点击`Download` ，会跳转到一个下载的页面

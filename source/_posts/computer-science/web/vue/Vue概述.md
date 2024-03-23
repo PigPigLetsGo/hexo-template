@@ -3,7 +3,6 @@ title: Vue概述
 categories: 
     - [计算机学科,web,vue]
 tags:
-    - web
     - vue
     - 计算机学科
     - 介绍

@@ -4,9 +4,7 @@ categories:
     - [计算机学科,web,js,WebAPIs]
 tags:
     - 计算机学科
-    - web
     - js
-    - WebAPIs
 ---
 
 # webAPIs:christmas_tree: 

@@ -4,7 +4,7 @@ categories:
     - [问题总汇]
 tags:
     - 问题总汇
-    - SpringBoot
+    - springboot
     - Jwt
     - jdk版本问题
 ---

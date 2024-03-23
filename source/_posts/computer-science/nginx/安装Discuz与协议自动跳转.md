@@ -5,7 +5,6 @@ categories:
 tags:
     - 计算机学科
     - nginx
-    - 基础
 ---
 
 访问官网地址:[1](https://discuz.net/)

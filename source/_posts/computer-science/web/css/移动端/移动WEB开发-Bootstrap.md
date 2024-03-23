@@ -4,10 +4,7 @@ categories:
     - [计算机学科,web,css,移动端]
 tags:
     - web
-    - html
-    - css
     - 计算机学科
-    - 移动端
 ---
 
 ## Bootstrap

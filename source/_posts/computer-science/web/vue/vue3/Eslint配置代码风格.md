@@ -3,7 +3,6 @@ title: vue3-Eslint配置代码风格
 categories: 
     - [计算机学科,web,vue,vue3]
 tags:
-    - web
     - vue3
     - 计算机学科
 ---

@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: "D の Java小窝"
+title: "D の Java"
 subtitle: "别怕路长梦远"
 description: "欢迎来我的博客空间"
 keywords: "java,web,c"
@@ -206,6 +206,37 @@ minify:
     compress:
     exclude:
       - '**/*.min.js'
+
+valine:
+  appId: wdsNlBUj9JciEmqYqF8X7rSK-gzGzoHsz
+  appKey: sxgx5PvvR9JDk4fEhCYX8muE
+  placeholder: ヽ(○´∀`)ﾉ♪ 快来评论把，使用说明：1.名字随便填写，2.输入自己的QQ邮箱，3.网站可以不填写。前两个完成后就可以评论啦! # Comment box placeholder
+  avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
+  pageSize: 10 # Pagination size
+  lang: zh-CN
+  visitor: true # Article reading statistic
+  NoRecordIP: false # Whether to record the commenter IP
+  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  powerMode: true
+  tagMeta:
+    visitor: 新朋友
+    master: 主人
+    friend: 小伙伴
+    investor: 金主粑粑
+  tagColor:
+    master: "var(--color-orange)"
+    friend: "var(--color-aqua)"
+    investor: "var(--color-pink)"
+  tagMember:
+    master:
+      # - hash of master@email.com
+      # - hash of master2@email.com
+    friend:
+      # - hash of friend@email.com
+      # - hash of friend2@email.com
+    investor:
+      # - hash of investor1@email.com
+
 
 # algolia:
 #   appId:

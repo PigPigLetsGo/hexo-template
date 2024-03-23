@@ -5,7 +5,6 @@ categories:
 tags:
     - 计算机学科
     - nginx
-    - 基础
 ---
 
 **网络术语**:

@@ -43,6 +43,8 @@ docker-ce
 
 首先需要大家虚拟机联网，安装yum工具
 
+注意： 这里是必须安装的，因为下面的yum-utils不是yum它们是不同的如果没有yum-utils那么下面的步骤就会失败
+
 ```sh
 yum install -y yum-utils \
 device-mapper-persistent-data \

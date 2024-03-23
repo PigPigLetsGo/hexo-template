@@ -734,6 +734,10 @@ git中执行命令：git restore 将index.html在暂存区中的那个代码文�
 | `git branch -D 分支名`           | 强制删除分支                         | 一般不建议使用                                               |
 | `git branch -m 分支命名`         | 修改分支的名称                       |                                                              |
 
+当拉去最新远程仓库代码到本地时出现：refusing to merge unrelated histories 解决办法如下：
+
+`git pull origin master --allow-unrelated-histories` 标志来允许合并不相关的历史记录
+
 ### Git 远程仓库
 
 **概念**：托管在因特网或其它网络中的你的项目的<font title='red'>版本库</font>.

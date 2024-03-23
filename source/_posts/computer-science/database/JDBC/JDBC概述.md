@@ -9,7 +9,13 @@ tags:
     - 介绍
 ---
 
+
+
 ## JDBC概述
+
+[TOC]
+
+
 
 >  1.  JDBC为访问不同的数据库提供了统一的接口,为使用者屏蔽了细节问题
 >  2.  Java程序员使用JDBC,可以连接任何提供了JDBC驱动程序的数据库系统,从而完成对数据库的各种操作
@@ -868,7 +874,167 @@ public class C3P0_test {
     }
 ```
 
-### Druid使用:
+### Mysql8使用c3p0连接配置
+
+目录结构(参考)
+
+![image-20240311151041197](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240311151041197.png)
+
+编写c3p0-config.xml文件
+
+将该文件放到src目录下(普通工程)
+
+```xml
+<c3p0-config>
+    <!--使用默认的配置读取连接池对象-->
+    <default-config>
+        <!--连接参数-->
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/?characterEncoding=utf-8&amp;serverTimezone=UTC&amp;useUnicode=true</property>
+        <property name="user">root</property>
+        <property name="password"></property>
+
+        <!--连接池参数-->
+        <property name="initialPoolSize">5</property>
+        <property name="maxPoolSize">10</property>
+        <property name="checkoutTimeout">3000</property>
+    </default-config>
+</c3p0-config>
+```
+
+JdbcUtils类
+
+```java
+public class JdbcUtils {
+    // c3p0数据库连接池对象属性
+    private static final ComboPooledDataSource ds = new ComboPooledDataSource();
+    // 获取连接
+    public static Connection getConnection() {
+        try {
+            return ds.getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // 释放资源
+    public static void release(AutoCloseable... ios) {
+        for (AutoCloseable io : ios) {
+            if (io != null) {
+                try {
+                    io.close();
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+    }
+
+    // 提交事务并释放资源
+    public static void commitAndClose(Connection conn) {
+        if (conn != null) {
+            try {
+                // 提交事务
+                conn.commit();
+                // 释放资源
+                conn.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    // 回滚事务并释放资源
+    public static void rollbackAndClose(Connection conn) {
+        if (conn != null) {
+            try {
+                // 回滚事务
+                conn.rollback();
+                // 释放资源
+                conn.close();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+}
+```
+
+#### 使用案例
+
+dao
+
+```java
+public class AccountDao {
+    // 转出
+    public void out(String outUser, int money) throws SQLException {
+        String sql = "update account set money = money - ? where name = ?";
+        Connection connection = JdbcUtils.getConnection();
+        PreparedStatement pstm = connection.prepareStatement(sql);
+        pstm.setInt(1, money);
+        pstm.setString(2, outUser);
+        pstm.executeUpdate();
+        JdbcUtils.release(pstm, connection);
+    }
+
+    // 转入
+    public void in(String inUser, int money) throws SQLException {
+        String sql = "update account set money = money + ? where name = ?";
+        Connection connection = JdbcUtils.getConnection();
+        PreparedStatement pstm = connection.prepareStatement(sql);
+        pstm.setInt(1, money);
+        pstm.setString(2, inUser);
+        pstm.executeUpdate();
+        JdbcUtils.release(pstm, connection);
+    }
+}
+```
+
+service
+
+```java
+public class AccountService {
+    // 转账
+    public boolean transfer(String outUser, String inUser, int money) {
+        AccountDao ad = new AccountDao();
+        try {
+            // 转出
+            ad.out(outUser, money);
+            // 转入
+            ad.in(inUser, money);
+        } catch (SQLException e) {
+            return false;
+        }
+        return true;
+    }
+}
+```
+
+main
+
+```java
+public static void main(String[] args) {
+   // 模拟数据：Jack给Rose转账100元
+   String outUser = "Jack";
+   String inUser = "Rose";
+   int money = 100;
+   AccountService service = new AccountService();
+   boolean result = service.transfer(outUser, inUser, money);
+   if (result == false) {
+      System.out.println("转账失败");
+   } else {
+      System.out.println("转账成功");
+   }
+}
+```
+
+执行结果：
+
+```
+转账成功
+```
+
+### Druid使用
 
 druid.Properties配置文件
 

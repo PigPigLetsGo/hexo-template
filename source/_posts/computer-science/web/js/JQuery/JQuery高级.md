@@ -4,9 +4,7 @@ categories:
     - [计算机学科,web,js,JQuery]
 tags:
     - 计算机学科
-    - web
-    - js
-    - JQuery
+    - jquery
 ---
 
 ## JQuery高级部分

@@ -5,8 +5,6 @@ categories:
 tags:
    - 计算机学科
    - web
-   - js
-   - 存储
 ---
 
 # 初始localStorage

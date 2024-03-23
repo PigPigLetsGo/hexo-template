@@ -27,6 +27,8 @@ tags:
 
 实体类：
 
+PS：id 和 pId 必须使用String类型否则会在转树结构的时候为Null
+
 ```java
 @Data
 @EqualsAndHashCode(callSuper = false)

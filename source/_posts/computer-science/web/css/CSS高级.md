@@ -4,8 +4,6 @@ categories:
     - [计算机学科,web,css]
 tags:
     - web
-    - html
-    - css
     - 计算机学科
 ---
 

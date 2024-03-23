@@ -5,7 +5,6 @@ categories:
 tags:
     - 计算机学科
     - nginx
-    - 基础
 ---
 
 ![image_2023-01-28-11-16-56](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image_2023-01-28-11-16-56_20230225135830.png)

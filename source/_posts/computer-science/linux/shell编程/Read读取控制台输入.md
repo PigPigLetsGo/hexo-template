@@ -5,7 +5,6 @@ categories:
 tags:
       - 计算机学科
       - linux
-      - shell编程
 ---
 
 > 基本语法

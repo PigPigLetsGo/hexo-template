@@ -1,5 +1,5 @@
 # Alternate site name
-alternate: D 的个人博客
+alternate: D & PersonalBlog
 
 open_graph:
   # twitter_id:
@@ -131,7 +131,7 @@ widgets:
   # if true, will show random posts
   random_posts: true
   # if true, will show recent comments
-  recent_comments: false
+  recent_comments: true
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
@@ -185,51 +185,43 @@ creative_commons:
 # Comments
 # Valine
 # For more information: https://github.com/amehime/MiniValine
-# valine:
-#   appId: 
-#   appKey: 
-#   placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
-#   avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
-#   pageSize: 10 # Pagination size
-#   lang: zh-CN
-#   visitor: true # Article reading statistic
-#   NoRecordIP: false # Whether to record the commenter IP
-#   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
-#   powerMode: true
-#   tagMeta:
-#     visitor: 新朋友
-#     master: 主人
-#     friend: 小伙伴
-#     investor: 金主粑粑
-#   tagColor:
-#     master: "var(--color-orange)"
-#     friend: "var(--color-aqua)"
-#     investor: "var(--color-pink)"
-#   tagMember:
-#     master:
-#       # - hash of master@email.com
-#       # - hash of master2@email.com
-#     friend:
-#       # - hash of friend@email.com
-#       # - hash of friend2@email.com
-#     investor:
-#       # - hash of investor1@email.com
+valine:
+  appId: wdsNlBUj9JciEmqYqF8X7rSK-gzGzoHsz
+  appKey: sxgx5PvvR9JDk4fEhCYX8muE
+  placeholder: ヽ(○´∀`)ﾉ♪ # Comment box placeholder
+  avatar: mp # Gravatar style : mp, identicon, monsterid, wavatar, robohash, retro
+  pageSize: 10 # Pagination size
+  lang: zh-CN
+  visitor: true # Article reading statistic
+  NoRecordIP: false # Whether to record the commenter IP
+  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  powerMode: true
+  tagMeta:
+    visitor: 新朋友
+    master: 主人
+    friend: 小伙伴
+    investor: 金主粑粑
+  tagColor:
+    master: "var(--color-orange)"
+    friend: "var(--color-aqua)"
+    investor: "var(--color-pink)"
+  tagMember:
+    master:
+      # - hash of master@email.com
+      # - hash of master2@email.com
+    friend:
+      # - hash of friend@email.com
+      # - hash of friend2@email.com
+    investor:
+      # - hash of investor1@email.com
 
 # bgm
 audio:
-  - title: 中文
+  - title: Their
     list:
      - https://music.163.com/#/song?id=1858139145
      - https://music.163.com/#/song?id=1498522590
-     - https://music.163.com/#/song?id=1817762859
-     - https://music.163.com/#/song?id=1805543348
-     - https://music.163.com/#/song?id=1325896149
-     - https://music.163.com/#/song?id=1808475152
-     - https://music.163.com/#/song?id=128082
-     - https://music.163.com/#/song?id=163180
-     - https://music.163.com/#/song?id=1404014861
-     - https://music.163.com/#/song?id=1480361161
-  - title: 国外
+  - title: Foreign_country
     list:
      - https://music.163.com/#/song?id=1868553
      - https://music.163.com/#/song?id=4940920
@@ -241,18 +233,9 @@ audio:
      - https://music.163.com/#/song?id=21303923
      - https://music.163.com/#/song?id=456370693
      - https://music.163.com/#/song?id=1342949180
-  - title: music
-    list:
-     - https://music.163.com/#/song?id=1499817937
-  - title: enjoy dota,enjoy
+  - title: Enjoy
     list:
      - https://music.163.com/#/song?id=34167558
-     - https://music.163.com/#/song?id=1353191067
-     - https://music.163.com/#/song?id=1353187371
-     - https://music.163.com/#/song?id=1353191065
-     - https://music.163.com/#/song?id=1353191066
-     - https://music.163.com/#/song?id=1353191063
-     - https://music.163.com/#/song?id=1353187370
 
 # random image api
 image_server: # "https://acg.xydwz.cn/api/api.php"
@@ -306,7 +289,7 @@ yandex_site_verification:
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING `vendors` SETTINGS

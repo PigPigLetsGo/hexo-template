@@ -3,7 +3,6 @@ title: vue3-什么是Pinia
 categories: 
     - [计算机学科,web,vue,vue3]
 tags:
-    - web
     - vue3
     - 计算机学科
 ---
