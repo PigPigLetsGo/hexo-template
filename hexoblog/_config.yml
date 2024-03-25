@@ -229,14 +229,12 @@ valine:
     investor: "var(--color-pink)"
   tagMember:
     master:
-      # - hash of master@email.com
-      # - hash of master2@email.com
+      - hash of 9afe0829273a7910bdfceead731785a0
     friend:
       # - hash of friend@email.com
       # - hash of friend2@email.com
     investor:
       # - hash of investor1@email.com
-
 
 # algolia:
 #   appId:

@@ -206,9 +206,8 @@ valine:
     friend: "var(--color-aqua)"
     investor: "var(--color-pink)"
   tagMember:
-    master:
-      # - hash of master@email.com
-      # - hash of master2@email.com
+    master: # 1851644015@qq.com 的 哈希值 可以到leancloud中找meailMd5值,确保是自己邮箱的
+      - 9afe0829273a7910bdfceead731785a0
     friend:
       # - hash of friend@email.com
       # - hash of friend2@email.com

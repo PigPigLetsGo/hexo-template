@@ -6,9 +6,7 @@ tags:
    - 计算机学科
    - springboot
    - 整合jar包
-   - Junit
    - SSM
-   - 代码生成
 ---
 
 # 整合Junit

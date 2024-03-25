@@ -230,6 +230,23 @@ spring:                                              #||
 #========================================================
 ```
 
+==使用Query的方式如下：==
+
+```yaml
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: test_route
+          uri: https://www.baidu.com
+          predicates: # 断言规则当我们访问某个url比如：http://localhost:8088/?url=qq 那么此时就会跳转到qq的网址 访问url=baidu就到百度了
+            - Query=url,baidu
+        - id: qq_route
+          uri: https://www.qq.com
+          predicates:
+            - Query=url,qq
+```
+
 访问uri：http://127.0.0.1:10010/order/101
 
 ![image-20231007170619279](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202310071706489.png)

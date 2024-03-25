@@ -3,7 +3,7 @@ title: 配置@代替src目录
 categories: 
     - [计算机学科,web,vue]
 tags:
-    - vue
+    - vue3
     - 计算机学科
     - 代码经验
 ---

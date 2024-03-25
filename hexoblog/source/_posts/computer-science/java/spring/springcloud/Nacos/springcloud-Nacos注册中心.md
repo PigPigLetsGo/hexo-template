@@ -695,6 +695,10 @@ spring:
 
 共享配置/扩展配置
 
+多个扩展配置的案例如下：
+
+[案例文章](https://pigpigletsgo.github.io/computer-science/java/spring/springcloud/Nacos/%E6%A1%88%E4%BE%8B/%E6%8B%86%E5%88%86%E4%B8%8D%E5%90%8C%E9%85%8D%E7%BD%AE%E5%88%B0nacos%E5%B9%B6%E8%AF%BB%E5%8F%96%E4%B8%8D%E5%90%8C%E9%85%8D%E7%BD%AE%E5%88%B0%E9%A1%B9%E7%9B%AE/)
+
 ```yml
 spring:
   application:

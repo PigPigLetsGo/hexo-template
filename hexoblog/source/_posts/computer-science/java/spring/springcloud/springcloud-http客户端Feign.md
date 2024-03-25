@@ -58,6 +58,8 @@ Feign是一个声明式的http客户端，官方地址：https://github.com/Open
 
 ```java
 @EnableFeignClients
+// 如果我们创建的远程调用类不在启动类的扫描范围则可以使用下面的方式扫描远程调用类
+// @EnableFeignClients(basePackages = "com.atguigu.gulimail.member.feign")
 @MapperScan("cn.itcast.order.mapper")
 @SpringBootApplication
 public class OrderApplication {

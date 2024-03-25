@@ -144,3 +144,29 @@ tags:
 ![image-20240105160129814](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/202401051601874.png)
 
 **注意**：文章的 categories 的 顺序会对精选分类产生影响的，不要弄混了，建议按照自己建立目录的顺序来写
+
+## 评论区配置
+
+首先到https://console.leancloud.cn/
+
+注册一个账号，注册中国大陆的账号！
+
+创建一个应用
+
+![image-20240323224712402](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240323224712402.png)
+
+点击上面的齿轮进入设置页面，我们就可以拿到APPID和APPKEY了
+
+![image-20240323224952123](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240323224952123.png)
+
+将其配置到咱们博客配置文件的如下位置
+
+![image-20240323225017072](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240323225017072.png)
+
+随后我们需要配置安全域名否则就会报错的
+
+![image-20240323225100009](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240323225100009.png)
+
+上面配置完成后到结构化数据里面创建一个Class名为Comment的类，我们就可以正常使用了，如果没有创建该Class目测会报错404就是找不到XXX类，我们就需要按如下图的方式创建对应的Class。这里的Comment就是它报错说 Comment404我才创建的就好了。
+
+![image-20240323225148544](https://raw.githubusercontent.com/PigPigLetsGo/imeages/master/image-20240323225148544.png)

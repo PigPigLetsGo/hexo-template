@@ -5,7 +5,7 @@ categories:
 tags:
     - 计算机学科
     - web
-    - 案例代码
+    - 案例Demo
 ---
 
 ## 实现bilibili点击小滑块移动效果
