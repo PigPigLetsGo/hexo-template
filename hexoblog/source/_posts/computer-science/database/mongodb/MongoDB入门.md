@@ -95,7 +95,7 @@ BSON(Binary Serialized Document Format)是一种类似json的一种二进制形�
 
 BSON和JSON一样，支持内嵌的文档对象和数组对象，但是BSON有JSON没有的一些数据类型，如Date和BinData类型。
 
-BSON采用了类似于C语言结构体的名称，对表示方法，支持内嵌的文档对象和数组对象，具有轻量性，可遍历性，高效性的三个特点，可以有效描述非结构化数据的结构化数据。这种格式的有点是灵活性高，但它的缺点是空间利用率不是很理想。
+BSON采用了类似于C语言结构体的名称，对表示方法，支持内嵌的文档对象和数组对象，具有轻量性，可遍历性，高效性的三个特点，可以有效描述非结构化数据的结构化数据。这种格式的优点是灵活性高，但它的缺点是空间利用率不是很理想。
 
 Bson中，除了基本的JSON类型：string，integer，boolean，double，null，array和object，mongo还是用了特殊的数据类型，这些类型包括date，object，binary，data，regular，expression和code。每一个驱动都以特定语言的方式实现了这些类型，查看你的驱动的文档来获取详细信息。
 

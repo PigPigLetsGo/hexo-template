@@ -268,6 +268,24 @@ String mimeType = MediaType.APPLICATION_OCTET_STREAM_VALUE;//通用mimeType，�
 }
 ```
 
+## 分块上传文件
+
+```java
+public R uploadImage(MultipartFile file) throws IOException, ServerException, InsufficientDataException, ErrorResponseException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException
+{
+   File fileData = convertMultiPartToFile(file);
+   FileInputStream input = new FileInputStream(fileData);
+   String fileName = getUUID();
+   PutObjectArgs build = PutObjectArgs.builder()
+            .object(fileName + ".jpeg")
+            .contentType("image/jpeg")
+            .bucket(bucket)
+            .stream(input, input.available(), -1).build();
+   client.putObject(build);
+   return R.ok(path + "/" + bucket + "/" + fileName + ".jpeg");
+}
+```
+
 ## 2.4、查询
 
 通过查询文件查看文件是否存在minio中。

@@ -146,6 +146,22 @@ setParameter:
  enableLocalhostAuthBypass: false
 ```
 
+windows配置如下：
+
+```
+systemLog:
+  destination: file
+  path: D:\mongoDB\mongodb-win32-x86_64-windows-5.0.26\log\mongod.log  # 实际日志文件路径
+  logAppend: true
+
+storage:
+  dbPath: D:\mongoDB\mongodb-win32-x86_64-windows-5.0.26\data  # 实际数据存储路径
+
+net:
+  bindIp: 0.0.0.0
+  port: 27017  # MongoDB 默认端口号
+```
+
 ## Shell连接(mongo命令)
 
 在命令提示符输入以下Shell命令即可完成登录

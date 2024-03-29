@@ -6,6 +6,7 @@ tags:
    - 计算机学科
    - springboot
    - 基础
+   - 知识点
 ---
 
 # SpringBoot排除自动配置的4个方法
