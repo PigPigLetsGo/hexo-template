@@ -4,7 +4,7 @@ categories:
     - [计算机学科,database,mysql]
 tags:
     - mysql
-    - databse
+    - database
     - 计算机学科
 ---
 

@@ -22,6 +22,8 @@ public interface ArticleRepository extends MongoRepository<Article,String> {
      * @return
      */
     Page<Article> findAllBy(Pageable pageable);
+    // 按照条件查询并分页
+    // Page<Article> findAllByState(String state, Pageable pageable);
 }
 ```
 
@@ -46,6 +48,8 @@ public class EssayServiceImpl implements EssayService
     public R getAll(Pageable pageable)
     {
         return R.ok().put("data", repository.findAllBy(pageable));
+        // 第一个参数就是条件
+        // return R.ok().put("data", repository.findAllByState(MongoDels.EX.getCode(), pageable));
     }
 }
 ```
